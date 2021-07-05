@@ -1,0 +1,5 @@
+@mixin box($rounded-corners, $border-color){
+    border-radius:$rounded-corners;
+    border:$border-color;
+    background-color: $popUp_color;
+}

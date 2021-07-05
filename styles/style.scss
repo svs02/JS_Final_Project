@@ -1,0 +1,186 @@
+@charset "uft-8";
+
+@import "variables.scss";
+@import "mixin.scss";
+
+
+
+html, body{
+    height: 100%;
+  }
+  
+  
+h1, h2{
+    font-family: $font;
+  }
+  
+footer{
+    font-size: 30px;
+    font-family: $font;
+    text-align: center;
+    background-color: $secondary_color;
+  }
+  
+main{
+    font-family: $font;
+  
+  }
+  
+.tg {
+    border-collapse:collapse;
+    border-spacing:0; 
+    width: 80%;
+    td {
+        font-family: $font;
+        font-size:14px; 
+        overflow:hidden;
+        padding:10px 5px;
+        word-break:normal;}
+    th{
+        font-family: $font;
+        font-size:14px; 
+        font-weight:normal;
+        overflow:hidden;
+        padding:10px 5px;
+        word-break:normal;
+        }
+    .blank{
+        background-color:$primary_color;
+        text-align:left;
+        vertical-align:top;
+        border: none;
+        }
+       
+    .Restart{
+        background-color:$computerDice_color;
+        text-align:left;
+        vertical-align:top;
+        }
+    .roll{
+        background-color:$playerDice_color;
+        text-align:right;
+        vertical-align:top;
+        }
+}
+  
+
+
+
+.blank{
+      height: 50px;
+  }
+  
+  .gameTable img{
+      width: auto; height: auto;
+      max-width: 100px;
+      max-height: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  #titleImage{
+    width: auto; height: auto;
+    max-width: 400px;
+    display: block; margin: 0px auto; 
+  }
+  
+  button {
+    text-decoration: none;
+    background-color: $button_background;
+    border: 2px solid $secondary_color;
+    color: $primary_color;
+    text-align: center;
+    padding: 1%;
+    border-radius: 1%;
+    cursor: pointer;
+  }
+  
+  .button {
+    font-family: $font;
+    border-radius: 10px;
+  }
+  
+  header {
+    text-align: center;
+    background-color: gray;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+  }
+  
+  .gameTable {
+    border-bottom: 1px solid rgb(185, 185, 185);
+    background-color: rgb(246, 247, 189);
+  }
+  
+  .result{
+    border-bottom: 1px solid rgb(185, 185, 185);
+  }
+  
+  .diceGame {
+    background-color: white;
+  }
+  
+  hr{
+    width: 100%;
+    color: black;
+    size: 1;
+  }
+  
+  h3 {
+    margin: 1%;
+  }
+  
+  .computerdice {
+    background-color:#ffb1ae;
+  }
+  
+  .mydice {
+    background-color: #9db5ff;
+  }
+  
+  
+  #popup{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width:300px;
+    padding: 30px;
+    font-size: 2em;
+    font-family: $font;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    @include box(10px, $secondary_color)
+  }
+  
+  #popupClose{
+      background-color: #7e508f;
+      color:white;
+      padding:10px;
+      border-radius:5px;
+      border:solid 2px white;
+      top:30px;
+      right:20px;
+      font-size:1em;
+      cursor: pointer;
+      float: right;
+  }
+  
+  #ruleHideBtn, #playHideBtn{
+    float: right;
+    cursor: pointer;
+  }
+  
+  #ruleShowBtn, #playShowBtn{
+    display: none;
+    float: right;
+    cursor: pointer;
+  }
+  
+  

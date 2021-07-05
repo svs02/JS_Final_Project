@@ -1,88 +1,91 @@
-html, body{
+/* Sass variables */
+html, body {
   height: 100%;
 }
 
-
-h1, h2{
-  font-family: 'Yomogi', cursive;
+h1, h2 {
+  font-family: "Yomogi", cursive;
 }
 
-footer{
+footer {
   font-size: 30px;
-  font-family: 'Yomogi', cursive;
+  font-family: "Yomogi", cursive;
   text-align: center;
   background-color: gray;
 }
 
-main{
-  font-family: 'Yomogi', cursive;
-
+main {
+  font-family: "Yomogi", cursive;
 }
 
-.tg  {
-  border-collapse:collapse;
-  border-spacing:0; 
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
   width: 80%;
 }
-.tg td {
-  font-family: 'Yomogi', cursive;
-  font-size:14px; 
-  overflow:hidden;
-  padding:10px 5px;
-  word-break:normal;}
 
-.tg th{
-  font-family: 'Yomogi', cursive;
-  font-size:14px; 
-  font-weight:normal;
-  overflow:hidden;
-  padding:10px 5px;
-  word-break:normal;
+.tg td {
+  font-family: "Yomogi", cursive;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
 }
-.tg .blank{
-  background-color:#ffffff;
-  text-align:left;
-  vertical-align:top;
+
+.tg th {
+  font-family: "Yomogi", cursive;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
 }
-.tg .gameTable{
-  text-align:center;
-  vertical-align:top
-}
-.tg .roll{
-  background-color:#9db5ff;
-  text-align:right;
-  vertical-align:top;
-}
-.tg .blank{
-  text-align:left;
-  vertical-align:top;
+
+.tg .blank {
+  background-color: white;
+  text-align: left;
+  vertical-align: top;
   border: none;
 }
-.tg .Restart{background-color:#ffb1ae;
-  text-align:left;
-  vertical-align:top;
-}            
 
-.blank{
-    height: 50px;
+.tg .Restart {
+  background-color: #ffb1ae;
+  text-align: left;
+  vertical-align: top;
 }
 
-.gameTable img{
-    width: auto; height: auto;
-    max-width: 100px;
-    max-height: 100px;
+.tg .roll {
+  background-color: #9db5ff;
+  text-align: right;
+  vertical-align: top;
 }
 
-#titleImage{
-  width: auto; height: auto;
+.blank {
+  height: 50px;
+}
+
+.gameTable img {
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#titleImage {
+  width: auto;
+  height: auto;
   max-width: 400px;
-  display: block; margin: 0px auto; 
+  display: block;
+  margin: 0px auto;
 }
 
 button {
   text-decoration: none;
   background-color: #4c8cc0;
-  border: 2px solid #196caf;
+  border: 2px solid gray;
   color: white;
   text-align: center;
   padding: 1%;
@@ -91,7 +94,7 @@ button {
 }
 
 .button {
-  font-family: 'Yomogi', cursive;
+  font-family: "Yomogi", cursive;
   border-radius: 10px;
 }
 
@@ -107,19 +110,19 @@ table {
 }
 
 .gameTable {
-  border-bottom: 1px solid rgb(185, 185, 185);
-  background-color: rgb(246, 247, 189);
+  border-bottom: 1px solid #b9b9b9;
+  background-color: #f6f7bd;
 }
 
-.result{
-  border-bottom: 1px solid rgb(185, 185, 185);
+.result {
+  border-bottom: 1px solid #b9b9b9;
 }
 
 .diceGame {
   background-color: white;
 }
 
-hr{
+hr {
   width: 100%;
   color: black;
   size: 1;
@@ -130,52 +133,50 @@ h3 {
 }
 
 .computerdice {
-  background-color:#ffb1ae;
+  background-color: #ffb1ae;
 }
 
 .mydice {
   background-color: #9db5ff;
 }
 
-
-#popup{
+#popup {
   display: none;
   position: absolute;
   top: 40%;
   left: 40%;
-  width:300px;
+  width: 300px;
   padding: 30px;
   font-size: 2em;
-  font-family: 'Yomogi', cursive;
+  font-family: "Yomogi", cursive;
   color: white;
-  border-radius: 5px;
   border-width: 2px;
-  border-color: #f0f6f8;
   border-style: solid;
+  border-radius: 10px;
+  border: gray;
   background-color: #8068ee;
 }
 
-#popupClose{
-    background-color: #7e508f;
-    color:white;
-    padding:10px;
-    border-radius:5px;
-    border:solid 2px white;
-    top:30px;
-    right:20px;
-    font-size:1em;
-    cursor: pointer;
-    float: right;
+#popupClose {
+  background-color: #7e508f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 2px white;
+  top: 30px;
+  right: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  float: right;
 }
 
-#ruleHideBtn, #playHideBtn{
+#ruleHideBtn, #playHideBtn {
   float: right;
   cursor: pointer;
 }
 
-#ruleShowBtn, #playShowBtn{
+#ruleShowBtn, #playShowBtn {
   display: none;
   float: right;
   cursor: pointer;
 }
-
