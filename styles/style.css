@@ -119,6 +119,12 @@ table {
   background-color: white;
 }
 
+hr{
+  width: 100%;
+  color: black;
+  size: 1;
+}
+
 h3 {
   margin: 1%;
 }
