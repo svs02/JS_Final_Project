@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP-2132 Dice Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer='defer'></script>
+    <script src="scripts/script.js" defer='defer'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+</head>
+
+<body class="diceGame">
+    <header>
+        <h2>COMP-2132</h2>
+        <h1>Final project - Dice game</h1>
+    </header>
+    <main>
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="blank" colspan="9">
+                        <img src="images/dice-title.png" alt="title-image" id="titleImage">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mydice" colspan="4"><h3>My dice</h3></td>
+                    <td class="blank" colspan="1"></td>
+                    <td class="computerdice" colspan="4"><h3>Computer dice</h3></td>
+                </tr>
+                <tr>
+                    <td class="gameTable" colspan="2" rowspan="3">
+                        <img src="images/dice_1.png" alt="mydice1" id="firstDice">
+                    </td>
+                    <td class="gameTable" colspan="2" rowspan="3">
+                        <img src="images/dice_1.png" alt="mydice2" id="secondDice">
+                    </td>
+                    <td class="blank" rowspan="6"></td>
+                    <td class="gameTable" colspan="2" rowspan="3">
+                        <img src="images/dice_1.png" alt="comDice1" id="thirdDice">
+                    </td>
+                    <td class="gameTable" colspan="2" rowspan="3">
+                        <img src="images/dice_1.png" alt="comDice2" id="forthDice">
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="result" colspan="2" rowspan="2" id="mySub">Sub-total: 0</td>
+                    <td class="result" colspan="2" rowspan="2" id="myTotal">Total: 0</td>
+                    <td class="result" colspan="2" rowspan="2" id="comSub">Sub-total: 0</td>
+                    <td class="result" colspan="2" rowspan="2" id="comTotal">Total: 0</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="roll" colspan="4"><button class="button" id="btnRoll">Dice Roll</button></td>
+                    <td class="Restart" colspan="4"><button class="button" id="btnReset">Restart</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="howToPlay">
+            <h4>How to play: <a id="playHideBtn">[hide]</a><a id="playShowBtn">[show]</a></h4>
+            <ul id="hidePlay">
+                <li>To start, click the 'Roll Dice' button.</li>
+                <li>To advance to the next round, click the 'Roll Dice' button again.</li>
+                <li>After three rounds, the game is over and the final score is calculated.</li>
+                <li>If you want to play agian, click the 'Restart' button or refresh the page.</li>
+        </ul>
+        </div>
+        <hr width = "100%" color = "black" size = "1">
+        <div class="rules">
+            <h4>Rules: <a id="ruleHideBtn">[hide]</a><a id="ruleShowBtn">[show]</a></h4>
+            <ul id="hideRules">
+                <li>Each round, you and the computer both roll a pair of dice.</li>
+                <li>Your score for that round will be based on the sum of the dice.</li>
+                <li>If you roll doubles(e.g. a 3 and a 3) then your score is multipled by 2.</li>
+                <li>Rolling a 1 will give you a score of 0 for that round.</li>
+                <li>The player who has the most points at the end of three rounds is the winner.</li>
+        </ul>
+        </div>
+
+        <aside id="popup">
+            <h2>Hello, Player</h2>
+            <p id="popupText"></p>
+            <a id="popupClose">Close</a>
+        </aside>
+
+        
+    </main>
+    <footer>
+        <h6>TAEHYEOK LEE A01075902</h6>
+        <h6>HOSUNG YI A01198596</h6>
+    </footer>
+</body>
+
+</html>

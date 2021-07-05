@@ -1,0 +1,158 @@
+h1, h2{
+  font-family: 'Yomogi', cursive;
+}
+
+main{
+  font-family: 'Yomogi', cursive;
+
+}
+
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0; 
+  width: 80%;
+}
+.tg td {
+  font-family: 'Yomogi', cursive;
+  font-size:14px; 
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;}
+
+.tg th{
+  font-family: 'Yomogi', cursive;
+  font-size:14px; 
+  font-weight:normal;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+.tg .blank{
+  background-color:#ffffff;
+  text-align:left;
+  vertical-align:top;
+}
+.tg .gameTable{
+  text-align:center;
+  vertical-align:top
+}
+.tg .roll{
+  background-color:#9db5ff;
+  text-align:right;
+  vertical-align:top;
+}
+.tg .blank{
+  text-align:left;
+  vertical-align:top;
+  border: none;
+}
+.tg .Restart{background-color:#ffb1ae;
+  text-align:left;
+  vertical-align:top;
+}            
+
+.blank{
+    height: 50px;
+}
+
+.gameTable img{
+    width: auto; height: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#titleImage{
+  width: auto; height: auto;
+  max-width: 400px;
+  display: block; margin: 0px auto; 
+}
+
+button {
+  text-decoration: none;
+  background-color: #4c8cc0;
+  border: 2px solid #196caf;
+  color: white;
+  text-align: center;
+  padding: 1%;
+  border-radius: 1%;
+}
+
+.button {
+  font-family: 'Yomogi', cursive;
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.gameTable {
+  border-bottom: 1px solid rgb(185, 185, 185);
+  background-color: rgb(246, 247, 189);
+}
+
+.result{
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.diceGame {
+  background-color: white;
+}
+
+h3 {
+  margin: 1%;
+}
+
+.computerdice {
+  background-color:#ffb1ae;
+}
+
+.mydice {
+  background-color: #9db5ff;
+}
+
+
+#popup{
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width:300px;
+  padding: 30px;
+  font-size: 2em;
+  font-family: 'Yomogi', cursive;
+  color: white;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #f0f6f8;
+  border-style: solid;
+  background-color: #8068ee;
+}
+
+#popupClose{
+    background-color: #7e508f;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    border:solid 2px white;
+    top:30px;
+    right:20px;
+    font-size:1em;
+    cursor: pointer;
+    float: right;
+}
+
+#ruleHideBtn, #playHideBtn{
+  float: right;
+}
+
+#ruleShowBtn, #playShowBtn{
+  display: none;
+  float: right;
+}
