@@ -1,5 +1,17 @@
+html, body{
+  height: 100%;
+}
+
+
 h1, h2{
   font-family: 'Yomogi', cursive;
+}
+
+footer{
+  font-size: 30px;
+  font-family: 'Yomogi', cursive;
+  text-align: center;
+  background-color: gray;
 }
 
 main{
@@ -84,6 +96,7 @@ button {
 
 header {
   text-align: center;
+  background-color: gray;
 }
 
 table {
@@ -156,3 +169,4 @@ h3 {
   display: none;
   float: right;
 }
+

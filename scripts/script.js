@@ -104,7 +104,7 @@ btnRoll.addEventListener('click', function(){
     }
 });
 
-//button for resting the game
+//button for resetting the game
 btnReset.addEventListener('click', function(){
     resetGame();
 });
