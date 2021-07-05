@@ -87,6 +87,7 @@ button {
   text-align: center;
   padding: 1%;
   border-radius: 1%;
+  cursor: pointer;
 }
 
 .button {
@@ -163,10 +164,12 @@ h3 {
 
 #ruleHideBtn, #playHideBtn{
   float: right;
+  cursor: pointer;
 }
 
 #ruleShowBtn, #playShowBtn{
   display: none;
   float: right;
+  cursor: pointer;
 }
 
