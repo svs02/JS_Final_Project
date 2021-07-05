@@ -16,6 +16,14 @@ const popupClose = document.getElementById('popupClose');
 //popup text
 const popupText = document.getElementById('popupText');
 
+//result object
+const result = {
+    win : "Congrtuation! Winnner is You!",
+    lose : "Oh no... You Lost..",
+    draw : "It's a draw. One more game?"
+};
+
+
 let myDice1;
 let myDice2;
 let comDice1;
@@ -92,13 +100,13 @@ btnRoll.addEventListener('click', function(){
         rollDice();
         btnRoll.disabled = true;
         if (myDiceTotal > comDiceTotal) {
-            popupText.innerHTML=`You Won!`;
+            popupText.innerHTML=result.win;
             $('#popup').fadeIn(500);
         } else if (myDiceTotal < comDiceTotal){
-            popupText.innerHTML=`You Lost...`;
+            popupText.innerHTML=result.lose;
             $('#popup').fadeIn(500);
         } else {
-            popupText.innerHTML=`It's a Draw!`;
+            popupText.innerHTML=result.draw;
             $('#popup').fadeIn(500);
         } // when draw
     }
@@ -109,7 +117,7 @@ btnReset.addEventListener('click', function(){
     resetGame();
 });
 
-//eventlistner for closing popups
+//eventlistners for closing popups
 popupClose.addEventListener('click', function(){
     $('#popup').fadeOut(500);
 });
